@@ -1,0 +1,1711 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: white;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #1e1e2f;
+  }
+  
+  .image-section , .profile-images, .nature-images{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .image-section img, .profile-images img, .nature-images img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.places-india, .profile-header, .nature-places h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+.profile-images {
+    background-color: #ffcc00;
+    padding: 10px;
+}
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .logo span {
+    color: pink;
+    margin-right: 6px;
+  }
+  
+
+  .mini-icon {
+    top: -8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 6px;
+  }
+
+  .logostart {
+    top: -8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 6px;
+    cursor: pointer;
+    padding: 5px 5px;
+  }
+
+  .logosecond {
+    top: -8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 6px;
+    cursor: pointer;
+    padding: 5px 5px;
+  }
+
+  .logothird {
+    top: -8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 6px;
+    cursor: pointer;
+    padding: 5px 5px;
+  }
+
+  .logoforth {
+    top: -8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 6px;
+    cursor: pointer;
+  }
+
+
+  .search-bar {
+    flex: 0 0 35%;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f2f2f7;
+  }
+  
+  .login-btn {
+    background-color: pink;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    /* Change from margin-right: auto; */
+    margin-left: 300px; /* Push to right */
+}
+.sign-btn {
+    background-color: pink;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    /* Change from margin-right: auto; */
+    margin-left: auto; /* Push to right */
+}
+  
+  .slider {
+    position: relative;
+    height: 75vh;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    height: 550px;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  .slide-content {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 30px;
+    border-radius: 12px;
+    .transparent-box{
+        opacity: 0.97;
+    }
+  }
+  
+  .spotlight-tag {
+    color: #ffb6c1;
+    margin-bottom: 10px;
+  }
+  
+  .metadata {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .metadata .tag {
+    padding: 2px 6px;
+    background-color: pink;
+    color: black;
+    border-radius: 4px;
+  }
+  
+  .metadata .tag.green {
+    background-color: lightgreen;
+  }
+  
+  .metadata .tag.blue {
+    background-color: lightblue;
+  }
+  
+  .description {
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+  
+  .actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .watch-btn {
+    background-color: pink;
+    color: black;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  
+  .detail-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+  }  
+
+  /* --- NEW: Features Section Styles --- */
+.features-section {
+    background-color: #1a1a1a; /* Dark background */
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2.5em;
+    color: #ff69b4; /* Pink heading */
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between cards */
+    max-width: 1200px; /* Max width for the grid */
+    margin: 0 auto; /* Center the grid */
+}
+
+.feature-card {
+    background-color: #2b2b2b; /* Slightly lighter dark for cards */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Stronger shadow for floating effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    border: 1px solid #3a3a3a; /* Subtle border */
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7); /* More pronounced shadow */
+}
+
+.feature-card .icon-placeholder {
+    font-size: 4em; /* Large icon size */
+    margin-bottom: 20px;
+    color: #ff69b4; /* Pink icon color */
+}
+
+.feature-card h3 {
+    font-size: 1.8em;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.feature-card .book-now-btn {
+    background-color: #ff69b4; /* Pink button */
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.feature-card .book-now-btn:hover {
+    background-color: #e05c9e; /* Darker pink on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* --- NEW: Travel Tools & Management Features Section Styles --- */
+.tools-management-section {
+    background-color: #1a1a1a; /* Consistent dark background */
+    text-align: center;
+    margin-top: 40px; /* Space between sections */
+}
+
+.tools-management-section h2 {
+    font-size: 2.5em;
+    color: #ff69b4; /* Pink heading */
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.tools-grid {
+    display: grid;
+    /* This will create 3 columns for larger screens, 2 for medium, 1 for small */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tool-card {
+    background-color: #2b2b2b; /* Slightly lighter dark for cards */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #3a3a3a;
+    text-align: center;
+    display: flex; /* Use flexbox for inner content alignment */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Push button to bottom */
+}
+
+.tool-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+.tool-card .icon-placeholder {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #ff69b4;
+}
+
+.tool-card h3 {
+    font-size: 1.8em;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+}
+
+.tool-card p {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 25px; /* Space above the button */
+    line-height: 1.5;
+    flex-grow: 1; /* Allow paragraph to take available space */
+}
+
+.tool-card .launch-tool-btn {
+    background-color: #ff69b4;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%; /* Make button full width of card */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.tool-card .launch-tool-btn:hover {
+    background-color: #e05c9e;
+    transform: scale(1.03); /* Slightly less aggressive scale than booking buttons */
+}
+
+/* BATTLE SECTION AKA GIF AND CONTENT */
+.battle-section {
+    position: relative;
+    height: 90vh;
+    background-image: url("imgs/himalayas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .battle-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay for text visibility */
+    z-index: 1;
+  }
+  
+  .battle-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .battle-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .battle-content p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  /* --- NEW: Trending Places Section Styles --- */
+.trending-places-section {
+    padding: 40px 0; /* Adjust padding as needed, 0 horizontal for full width carousel */
+    background-color: #1a1a1a;
+    margin-top: 40px;
+}
+
+.trending-places-section .section-title-pink {
+    margin-bottom: 20px; /* Less space between title and carousel */
+}
+
+.trending-content-wrapper {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Center the whole wrapper */
+    padding: 0 2%; /* Add some padding on sides to show carousel ends */
+}
+
+.nav-button {
+    background-color: #2b2b2b; /* Dark grey for buttons */
+    color: #ff69b4; /* Pink for arrows */
+    border: none;
+    border-radius: 50%; /* Circular buttons */
+    width: 45px;
+    height: 45px;
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Prevent buttons from shrinking */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 5; /* Ensure buttons are above carousel */
+}
+
+.nav-button:hover {
+    background-color: #3a3a3a;
+    transform: scale(1.05);
+}
+
+.nav-button:active {
+    transform: scale(0.95);
+}
+
+.nav-button.prev-btn {
+    margin-right: 20px; /* Space between button and carousel */
+}
+
+.nav-button.next-btn {
+    margin-left: 20px; /* Space between button and carousel */
+}
+
+.trending-places-carousel {
+    display: flex; /* Make it a flex container for the cards */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap to cards */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    gap: 15px; /* Space between cards, matching the image */
+    padding: 10px; /* Inner padding for scroll indicators if needed */
+    flex-grow: 1; /* Allow carousel to take available width */
+    max-width: calc(100% - 100px); /* Adjust max-width to leave space for buttons */
+    box-sizing: border-box; /* Include padding in width */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.trending-places-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.place-card {
+    flex-shrink: 0; /* Prevent cards from shrinking */
+    width: 170px; /* Width of each card, close to image */
+    height: 280px; /* Height of each card, close to image */
+    background-color: #2b2b2b; /* Dark background for cards */
+    border-radius: 10px; /* Slightly rounded corners */
+    overflow: hidden; /* Hide anything outside card bounds */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    position: relative; /* For numbering and name positioning */
+    display: flex;
+    flex-direction: column; /* Stack image and details */
+    text-decoration: none; /* Remove underline for anchor tag */
+    color: inherit; /* Inherit text color */
+    scroll-snap-align: start; /* Align to start for snapping */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.place-card:hover {
+    transform: scale(1.03); /* Subtle zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.place-card img {
+    width: 100%;
+    height: 100%; /* Image takes full height for a consistent rect shape */
+    object-fit: cover; /* Cover the area, cropping if necessary */
+    border-radius: 10px; /* Inherit border-radius from parent */
+    z-index: 1; /* Below text details */
+}
+
+.place-card .card-details {
+    position: absolute;
+    bottom: 0; /* Position at the bottom */
+    left: 0;
+    width: 100%;
+    height: 100%; /* Occupy full card height for numbering */
+    display: flex; /* Flexbox for alignment */
+    align-items: flex-end; /* Align items to the bottom */
+    padding: 10px; /* Padding for text */
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 50%); /* Gradient overlay */
+    z-index: 2; /* Above the image */
+}
+
+.place-card .place-number {
+    font-size: 1.8em; /* Large number */
+    font-weight: bold;
+    color: #ff69b4; /* Pink for the number */
+    margin-right: 5px; /* Space between number and name */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle shadow for readability */
+    align-self: flex-end; /* Align number to bottom */
+}
+
+.place-card .place-name {
+    font-size: 1.1em; /* Font size for vertical name */
+    font-weight: bold;
+    color: white; /* White text for name */
+    /* Key properties for vertical text */
+    writing-mode: vertical-lr; /* Vertical text, left-to-right columns */
+    text-orientation: mixed; /* Rotate glyphs if needed (or 'upright') */
+    transform: rotate(180deg); /* Rotate to read from bottom-up */
+    white-space: nowrap; /* Prevent line breaks */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    flex-grow: 1; /* Allows name to push number to left */
+    align-self: flex-end; /* Align name to bottom */
+    margin-left: -5px; /* Pull closer to number */
+}
+
+/* Specific styling for the section title */
+.trending-places-section .section-title-pink {
+    margin-left: 5%; /* Align with content on desktop */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .trending-places-section {
+        padding: 20px 0;
+    }
+    .trending-places-section .section-title-pink {
+        font-size: 2em;
+        padding-left: 20px; /* Smaller padding for mobile */
+        text-align: center;
+        margin-left: 0;
+    }
+    .trending-content-wrapper {
+        padding: 0 10px; /* Less padding on sides for mobile */
+    }
+    .nav-button {
+        width: 35px;
+        height: 35px;
+        font-size: 1.5em;
+        margin: 0 10px;
+    }
+    .trending-places-carousel {
+        max-width: calc(100% - 70px); /* Adjust max-width for smaller buttons */
+        gap: 10px;
+    }
+    .place-card {
+        width: 130px; /* Smaller card width for mobile */
+        height: 200px; /* Smaller card height */
+        border-radius: 8px;
+    }
+    .place-card .place-number {
+        font-size: 1.5em;
+    }
+    .place-card .place-name {
+        font-size: 0.9em;
+    }
+    .place-card .card-details {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+     .trending-places-carousel {
+        max-width: calc(100% - 20px); /* Max width adjusted for very small screens if buttons stack/disappear */
+     }
+     .nav-button {
+         display: none; /* Hide buttons on very small screens to give more space for carousel */
+     }
+}
+/* --- NEW: Traveler Stories & Comments Section Styles --- */
+.traveler-stories-section {
+    padding: 60px 5%; /* Generous padding */
+    background-color: #1a1a1a;
+    margin-top: 40px;
+}
+
+.section-header-comments {
+    display: flex;
+    justify-content: space-between; /* Space tabs and toggle */
+    align-items: center;
+    margin-bottom: 30px; /* Space below header */
+    padding-left: 20px; /* Align with the start of comment cards */
+    padding-right: 20px;
+}
+
+.comment-tabs {
+    display: flex;
+    gap: 15px; /* Space between tab buttons */
+}
+
+.tab-button {
+    background-color: transparent; /* No background by default */
+    border: none;
+    padding: 10px 0;
+    color: #ccc; /* Lighter grey for inactive tabs */
+    font-size: 1.2em; /* Bigger font */
+    font-weight: bold;
+    cursor: pointer;
+    position: relative; /* For the active indicator */
+    transition: color 0.3s ease;
+}
+
+.tab-button:hover {
+    color: #f0f0f0;
+}
+
+.tab-button.active {
+    color: #f0f0f0; /* White for active tab text */
+}
+
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* Pink underline thickness */
+    background-color: #ff69b4; /* Pink underline */
+    border-radius: 2px;
+}
+
+.show-comments-toggle {
+    display: flex;
+    align-items: center;
+    color: #f0f0f0;
+    font-size: 1em;
+    gap: 10px;
+}
+
+/* Custom Toggle Switch (Matches the image's style) */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px; /* Wider switch */
+    height: 25px; /* Taller switch */
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Comments Grid */
+.comments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Larger min width for cards */
+    gap: 25px; /* Space between cards */
+    padding: 0 20px; /* Padding inside the section for the grid */
+    transition: opacity 0.3s ease;
+}
+
+.comments-grid:not(.active-tab) {
+    display: none; /* Hide inactive tabs */
+    opacity: 0;
+}
+
+.comment-card {
+    background-color: #2b2b2b; /* Dark card background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 25px; /* More padding */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px; /* Minimum height for cards */
+}
+
+.comment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.comment-card .profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Space below profile info */
+}
+
+.comment-card .profile-avatar {
+    width: 55px; /* Larger avatar */
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #ff69b4; /* Pink border for avatar */
+    box-shadow: 0 0 8px rgba(255, 105, 180, 0.3); /* Subtle pink glow */
+}
+
+.comment-card .user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-card .username {
+    font-weight: bold;
+    font-size: 1.1em; /* Larger username font */
+    color: #f0f0f0;
+    margin-bottom: 3px;
+}
+
+.comment-card .timestamp {
+    font-size: 0.85em;
+    color: #aaa; /* Lighter grey for timestamp */
+}
+
+.comment-card .comment-text {
+    font-size: 1em; /* Standard text size */
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space above action link */
+    flex-grow: 1; /* Allow text to take space */
+}
+
+.comment-card .comment-action {
+    display: flex;
+    justify-content: flex-end; /* Align action link to right */
+    align-items: center;
+    margin-top: auto; /* Push to bottom */
+}
+
+.comment-card .action-link {
+    color: #ff69b4; /* Pink for action link */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.comment-card .action-link:hover {
+    color: #e05c9e; /* Darker pink on hover */
+}
+/* --- NEW: Top 10 Trending Natural Places Section Styles --- */
+/* This new section can reuse almost all the styles from .trending-places-section */
+/* Just define the section itself and its title alignment if different */
+.trending-natural-places-section {
+    background-color: #1a1a1a;
+    margin-top: 40px; /* Space between sections */
+}
+
+.trending-natural-places-section .section-title-pink {
+    /* Uses the same title styling, ensure left alignment */
+    margin-left: 5%;
+    text-align: left;
+}
+
+
+/* Responsive adjustments for smaller screens (apply to both sections) */
+@media (max-width: 768px) {
+    .trending-places-section,
+    .trending-natural-places-section { /* Apply to both sections */
+        padding: 20px 0;
+    }
+    .trending-places-section .section-title-pink,
+    .trending-natural-places-section .section-title-pink { /* Apply to both titles */
+        font-size: 2em;
+        padding-left: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .trending-content-wrapper {
+        padding: 0 10px;
+    }
+    .nav-button {
+        width: 35px;
+        height: 35px;
+        font-size: 1.5em;
+        margin: 0 10px;
+    }
+    .trending-places-carousel { /* Applies to both carousels */
+        max-width: calc(100% - 70px);
+        gap: 10px;
+    }
+    .place-card { /* Applies to all place cards */
+        width: 130px;
+        height: 200px;
+        border-radius: 8px;
+    }
+    .place-card .place-number {
+        font-size: 1.5em;
+    }
+    .place-card .place-name {
+        font-size: 0.9em;
+    }
+    .place-card .card-details {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+     .trending-places-carousel,
+     .trending-natural-places-carousel { /* Applies to both carousels */
+        max-width: calc(100% - 20px);
+     }
+     /* If you want to hide buttons on very small screens for both: */
+     .trending-places-section .nav-button,
+     .trending-natural-places-section .nav-button {
+         display: none;
+     }
+}
+/* --- NEW: Top Lists Section Styles --- */
+.top-lists-section {
+    padding: 60px 5%; /* Consistent padding with other main sections */
+    background-color: #0d0d0d; /* Even darker background for contrast */
+    margin-top: 40px;
+    display: grid;
+    /* This creates 4 columns similar to the image, and wraps them */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Min card width 280px */
+    gap: 30px; /* Space between categories */
+    position: relative; /* For any absolute positioning inside if needed */
+}
+
+.top-list-category {
+    background-color: #1a1a1a; /* Darker background for each category box */
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow for depth */
+    display: flex;
+    flex-direction: column;
+}
+
+.top-list-category .category-title {
+    color: #ff69b4; /* Pink for category titles */
+    font-size: 1.6em; /* Larger title */
+    font-weight: bold;
+    margin-bottom: 25px; /* Space below title */
+    border-bottom: 2px solid rgba(255, 105, 180, 0.3); /* Subtle pink underline */
+    padding-bottom: 10px;
+}
+
+.category-grid {
+    display: flex; /* Use flex for vertical stacking of cards */
+    flex-direction: column;
+    gap: 15px; /* Space between individual list-item-cards */
+    flex-grow: 1; /* Allows grid to take up available height */
+}
+
+.list-item-card {
+    display: flex;
+    align-items: flex-start; /* Align image and text at the top */
+    background-color: #2b2b2b; /* Slightly lighter card background */
+    border-radius: 8px;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.list-item-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    background-color: #3a3a3a; /* Darker background on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.list-item-card img {
+    width: 80px; /* Fixed width for image */
+    height: 110px; /* Fixed height for image (slightly taller to match example ratio) */
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 15px; /* Space between image and text */
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.list-item-card .item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content if space allows */
+    flex-grow: 1; /* Allow details to take remaining space */
+}
+
+.list-item-card h4 {
+    font-size: 1.1em; /* Larger title for the item */
+    color: #f0f0f0; /* White for item titles */
+    margin-bottom: 8px; /* Space below title */
+    line-height: 1.3;
+}
+
+.list-item-card .item-meta {
+    display: flex;
+    flex-wrap: wrap; /* Allow meta items to wrap if space is limited */
+    gap: 8px 12px; /* Space between meta items */
+    font-size: 0.85em;
+    color: #aaa; /* Lighter grey for meta text */
+}
+
+.list-item-card .meta-icon {
+    margin-right: 3px;
+    color: #ff69b4; /* Pink for icons */
+}
+
+.list-item-card .meta-value {
+    color: #ccc; /* Slightly lighter than meta text */
+    font-weight: 500;
+}
+
+.view-more-link {
+    align-self: flex-start; /* Align to the left */
+    color: #ff69b4; /* Pink for the link */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95em;
+    margin-top: 25px; /* Space above link */
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 105, 180, 0.2); /* Subtle divider */
+    transition: color 0.3s ease;
+}
+
+.view-more-link:hover {
+    color: #e05c9e; /* Darker pink on hover */
+}
+
+.view-more-link .arrow {
+    margin-left: 5px;
+    font-size: 1.1em;
+    transition: margin-left 0.2s ease;
+}
+
+.view-more-link:hover .arrow {
+    margin-left: 10px; /* Slide effect on hover */
+}
+
+
+/* Responsive adjustments for smaller screens for this new section */
+@media (max-width: 1024px) {
+    .top-lists-section {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Slightly smaller min width */
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-lists-section {
+        grid-template-columns: 1fr; /* Stack categories vertically on smaller screens */
+        padding: 40px 20px; /* More padding on sides */
+        gap: 30px;
+    }
+    .top-list-category {
+        padding: 20px;
+    }
+    .list-item-card img {
+        width: 70px; /* Slightly smaller image */
+        height: 100px;
+    }
+    .list-item-card h4 {
+        font-size: 1em;
+    }
+    .list-item-card .item-meta {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-list-category .category-title {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+    .list-item-card {
+        padding: 10px;
+    }
+    .list-item-card img {
+        width: 60px;
+        height: 90px;
+        margin-right: 10px;
+    }
+}
+/* --- NEW: Contact Us Section (Footer) Styles --- */
+.contact-us-footer {
+    background-color: #0d0d0d; /* Very dark background, consistent with site */
+    color: #f0f0f0; /* Light text color */
+    padding: 60px 5%; /* Ample padding for breathing room */
+    margin-top: 50px; /* Space from the section above */
+    text-align: center; /* Center align content by default */
+    border-top: 2px solid rgba(255, 105, 180, 0.2); /* Subtle pink separator */
+}
+
+.footer-content-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    justify-content: space-around; /* Distribute space between columns */
+    align-items: flex-start; /* Align items to the top of their containers */
+    gap: 40px; /* Space between the two main columns */
+    max-width: 1200px; /* Max width to keep content readable */
+    margin: 0 auto 40px auto; /* Center the wrapper and add bottom margin */
+}
+
+.footer-info,
+.footer-social-links {
+    flex: 1; /* Allow both to grow and shrink */
+    min-width: 280px; /* Minimum width before wrapping */
+    padding: 20px; /* Internal padding */
+    background-color: #1a1a1a; /* Slightly lighter dark background for internal boxes */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    text-align: left; /* Text alignment within each box */
+}
+
+.footer-info h3,
+.footer-social-links h3 {
+    color: #ff69b4; /* Pink heading color */
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 105, 180, 0.4); /* Pink underline */
+    padding-bottom: 10px;
+    display: inline-block; /* Make underline only as wide as text */
+}
+
+.footer-info p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ccc; /* Lighter grey for paragraph text */
+}
+
+/* Email Us Button Styling */
+.email-us-btn {
+    background-color: #ff69b4; /* Pink background */
+    color: #0d0d0d; /* Dark text for contrast */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px; /* Pill-shaped button */
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    display: inline-flex; /* Allows icon and text to sit nicely */
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4); /* Pink glow effect */
+}
+
+.email-us-btn:hover {
+    background-color: #e05c9e; /* Darker pink on hover */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 6px 15px rgba(255, 105, 180, 0.6); /* Enhanced glow */
+}
+
+.email-us-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(255, 105, 180, 0.3);
+}
+
+.email-us-btn i {
+    font-size: 1.2em; /* Slightly larger icon */
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: flex-start; /* Align icons to the left */
+    gap: 20px; /* Space between icons */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow icons to wrap if space is limited */
+}
+
+.social-icons a {
+    color: #f0f0f0; /* Light color for icons */
+    font-size: 2em; /* Large icons */
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* Remove underline */
+}
+
+.social-icons a:hover {
+    color: #ff69b4; /* Pink on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(255, 105, 180, 0.15); /* Dotted pink line */
+    font-size: 0.9em;
+    color: #999; /* Greyer text for copyright */
+}
+
+/* Responsive Adjustments for Contact Section */
+@media (max-width: 768px) {
+    .footer-content-wrapper {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center; /* Center items when stacked */
+        gap: 30px;
+    }
+
+    .footer-info,
+    .footer-social-links {
+        min-width: unset; /* Remove min-width to allow full width */
+        width: 100%; /* Take full width on small screens */
+        text-align: center; /* Center text in stacked columns */
+    }
+
+    .footer-info h3,
+    .footer-social-links h3 {
+        display: block; /* Allow underline to span full width if needed */
+        margin-left: auto; /* Center the pseudo-underline */
+        margin-right: auto;
+        width: fit-content; /* Make underline only as wide as text */
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center; /* Center social icons on small screens */
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-us-footer {
+        padding: 40px 5%;
+    }
+    .footer-info h3,
+    .footer-social-links h3 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+    .email-us-btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+    .social-icons a {
+        font-size: 1.8em;
+    }
+    .footer-bottom {
+        font-size: 0.8em;
+        margin-top: 25px;
+    }
+}
+
+/* --- NEW: Discover Your Next Adventure Section Styles --- */
+.discover-adventure-section {
+    padding: 6px;
+    background-color: #0d0d0d; /* Darker background for this prominent section */
+    margin-top: 5px;
+}
+
+/* Common header for sub-columns */
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 105, 180, 0.2);
+}
+
+.column-header h3 {
+    color: #f0f0f0; /* White for sub-section headings */
+    font-size: 1.6em;
+    margin: 0;
+}
+
+
+/* Left Column: Featured Guides */
+.featured-guides-column {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+.view-all-guides-link {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.view-all-guides-link:hover {
+    color: #e05c9e;
+}
+
+.view-all-guides-link i {
+    margin-left: 5px;
+}
+
+.guides-carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.guide-nav-button {
+    background-color: rgba(255, 105, 180, 0.15); /* Semi-transparent pink */
+    color: #ff69b4;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 5;
+    position: absolute; /* Position over the carousel */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.guide-nav-button.guide-prev-btn {
+    left: -20px; /* Adjust to be outside the carousel slightly */
+}
+
+.guide-nav-button.guide-next-btn {
+    right: -20px; /* Adjust to be outside the carousel slightly */
+}
+
+.guide-nav-button:hover {
+    background-color: rgba(255, 105, 180, 0.3);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.guide-nav-button:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+.featured-guides-carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px; /* Space between guide cards */
+    padding: 10px 0; /* Padding for scroll indicators */
+    flex-grow: 1;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+.featured-guides-carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.guide-card {
+    flex-shrink: 0;
+    width: 220px; /* Wider cards */
+    height: 300px; /* Taller cards */
+    background-color: #2b2b2b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+    text-decoration: none;
+    color: #f0f0f0;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guide-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.guide-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.guide-card .guide-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 70%, transparent 100%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%; /* Overlay covers full height for gradient */
+    box-sizing: border-box;
+    pointer-events: none; /* Allow clicks to pass through to underlying card */
+}
+
+.guide-card:hover .guide-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 70%, transparent 100%);
+}
+
+.guide-card .guide-overlay h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    pointer-events: auto; /* Re-enable pointer events for title */
+}
+
+.guide-card .guide-meta {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9em;
+    color: #ccc;
+    margin-bottom: 15px;
+    pointer-events: auto; /* Re-enable pointer events for meta */
+}
+
+.guide-card .guide-meta i {
+    color: #ff69b4;
+    margin-right: 5px;
+}
+
+.guide-card .read-guide-btn {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start; /* Align button to left within overlay */
+    pointer-events: auto; /* Re-enable pointer events for button */
+}
+
+.guide-card .read-guide-btn:hover {
+    background-color: #e05c9e;
+    transform: scale(1.05);
+}
+
+.travel-interests-section {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    flex-grow: 1; /* Allow it to take available height */
+}
+
+.interest-tags-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between tags */
+    margin-bottom: 20px;
+}
+
+.interest-tag {
+    background-color: #2b2b2b;
+    color: #ff69b4;
+    border: 1px solid #ff69b4;
+    padding: 8px 15px;
+    border-radius: 20px; /* Pill shape */
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.interest-tag:hover {
+    background-color: #ff69b4;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.interest-tag.active {
+    background-color: #ff69b4;
+    color: white;
+    border-color: #ff69b4;
+}
+
+.interest-tag.hidden {
+    display: none; /* Initially hidden tags */
+}
+
+.show-more-interests-btn {
+    background-color: transparent;
+    border: none;
+    color: #ff69b4;
+    font-size: 0.95em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.show-more-interests-btn:hover {
+    color: #e05c9e;
+}
+
+.show-more-interests-btn i {
+    transition: transform 0.3s ease;
+}
+
+.show-more-interests-btn.rotated i {
+    transform: rotate(180deg); /* Rotate arrow when "Show Less" */
+}
+
+
+.top-rated-experiences-section {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.top-rated-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.top-rated-tab {
+    background-color: #2b2b2b;
+    color: #ccc;
+    border: 1px solid #444;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-rated-tab:hover {
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+}
+
+.top-rated-tab.active {
+    background-color: #ff69b4;
+    color: white;
+    border-color: #ff69b4;
+}
+
+.top-rated-content {
+    display: none; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+.top-rated-content.active-period {
+    display: block; /* Show active content */
+    opacity: 1;
+}
+
+.top-rated-item {
+    display: flex;
+    align-items: center;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.top-rated-item:last-child {
+    margin-bottom: 0;
+}
+
+.top-rated-item:hover {
+    background-color: #3a3a3a;
+    transform: translateX(5px); /* Slide effect on hover */
+}
+
+.top-rated-item .item-rank {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff69b4;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.top-rated-item .item-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.top-rated-item .item-title {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 3px;
+}
+
+.top-rated-item .item-sub-info {
+    font-size: 0.85em;
+    color: #aaa;
+}
+
+.top-rated-item .item-sub-info i {
+    color: #FFD700; /* Gold star */
+    margin-right: 5px;
+}
+
+.top-rated-item .item-price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ff69b4;
+    flex-shrink: 0;
+    margin-left: 15px;
+}
+
+
+/* Responsive adjustments for Discover Your Next Adventure Section */
+@media (max-width: 1200px) {
+    .adventure-content-wrapper {
+        grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+        gap: 30px;
+    }
+    .featured-guides-column,
+    .interests-top-rated-column,
+    .travel-interests-section,
+    .top-rated-experiences-section {
+        padding: 25px;
+    }
+    .guides-carousel-container {
+        margin-top: 15px;
+    }
+    .guide-nav-button.guide-prev-btn {
+        left: 5px;
+    }
+    .guide-nav-button.guide-next-btn {
+        right: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .discover-adventure-section {
+        padding: 40px 20px;
+    }
+    .column-header h3 {
+        font-size: 1.4em;
+    }
+    .guide-card {
+        width: 180px; /* Smaller cards for mobile */
+        height: 250px;
+    }
+    .guide-card .guide-overlay h4 {
+        font-size: 1.1em;
+    }
+    .guide-card .guide-meta {
+        font-size: 0.8em;
+    }
+    .guide-card .read-guide-btn {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+    .interest-tag, .top-rated-tab {
+        font-size: 0.85em;
+        padding: 6px 12px;
+    }
+    .top-rated-item .item-rank {
+        font-size: 1.2em;
+    }
+    .top-rated-item .item-title {
+        font-size: 0.95em;
+    }
+    .top-rated-item .item-price {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .column-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .column-header h3 {
+        font-size: 1.2em;
+    }
+    .view-all-guides-link {
+        font-size: 0.85em;
+    }
+    .guide-nav-button {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2em;
+    }
+    .guide-nav-button.guide-prev-btn {
+        left: 0px;
+    }
+    .guide-nav-button.guide-next-btn {
+        right: 0px;
+    }
+    .featured-guides-carousel {
+        padding: 5px 0;
+        gap: 10px;
+    }
+    .guide-card {
+        width: 160px;
+        height: 220px;
+    }
+}
+
+/* SUBSCRIPTION */
+.subscription-section {
+    background-color: #111;
+    padding: 1px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .subscription-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .subscription-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .subscription-card {
+    background-color: #222;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .subscription-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 20px rgba(245, 43, 181, 0.5);
+  }
+  
+  .subscription-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ff00aa;
+  }
+  
+  .price {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .price span {
+    font-size: 16px;
+    color: #aaa;
+  }
+  .try-btn {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background-color: #f908e5f8;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+  }
+  
+.try-btn:hover {
+    background-color: #e9dea0;
+    color: #800000;
+  }
